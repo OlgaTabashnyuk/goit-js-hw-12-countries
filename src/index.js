@@ -35,16 +35,12 @@ function onSearch(event) {
             }
             else if (response.length > 10) {
                 error({
-  title: 'Error! :(',
-  text: 'Too many matches found! Please enter a more spesific query!'
-});
+                    title: 'Error! :(',
+                    text: 'Too many matches found! Please enter a more spesific query!'
+                    });
             }
         })
     .catch(console.log);
 
 } 
 
-// function renderCountryCard(country) {
-//      const markup = TemplateMarkup(country);
-//      refs.countryContainer.innerHTML = markup; 
-// }
