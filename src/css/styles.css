@@ -48,11 +48,6 @@ body {
   padding-top: 45px;
 }
 
-.country-card__flag .img {
-   border: 1px solid blue ;
-}
-
-
 
 .search-input {
    display: block;
