@@ -33,6 +33,12 @@ function onSearch(event) {
             if (response.length >= 2 && response.length <= 10) {
                  refs.countryContainer.insertAdjacentHTML('beforeend', CountriesList(response))
             }
+            if (!response.ok) {
+                error({
+                    title: 'Error! :(',
+                    text: 'Not found! Try again!'
+                    })
+            }
             else if (response.length > 10) {
                 error({
                     title: 'Error! :(',
